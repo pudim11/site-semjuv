@@ -188,12 +188,33 @@ header{
     margin-top: 30px;
     margin-left: 5px;
     text-decoration: none;
-    color: #fff;
+    color:black;
     font-family: 'Open Sans', sans-serif;
 }
 
 #noticias-lista{
-    border: 1px solid green; 
+    border: 1px solid rgb(95, 95, 95);
     width: 350px;
-    height: 900px;
+    height: 608px;
+    
 }
+
+#content-list{
+    height: 86px;
+    width: 350px;
+    border-bottom: 1px solid rgb(95, 95, 95);
+
+}
+
+#data-list{
+   margin: 10px;
+}
+#text-list{
+    margin-left: 10px;
+    overflow-wrap:break-word;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    
+}   
+/*Se alguém souber como fazer ficar com esses pontos, mas com só na segunda linha se possivel, faz ai na moral*/
