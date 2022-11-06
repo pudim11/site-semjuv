@@ -36,7 +36,7 @@
 
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
-    width: 15rem;
+    width: 10rem;
     height: 20rem;
     box-shadow: 6px 6px 13px -7px rgba(0,0,0,0.75);
 
@@ -59,13 +59,32 @@
 #area-text-saude{
     margin-top: 250px;
 }
+
+#area-text-depresao{
+ width: 1500px;
+ transform: translateX(-50);
+}
+
 #text-DSts{
     display: flex;
     align-items: center;
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1) ;
+    transform: translateY(50);
 }
 
-#btn-DSTs:hover > text-DSts{
-    color: red;
 
+#area-text-depresao.animar{
+  background-color: blue;
+  animation-name: slide;
+  animation-duration: .3s;
+
+}
+
+@keyframes slide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-50);
+    }
 }
