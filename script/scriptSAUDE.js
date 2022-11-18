@@ -21,11 +21,12 @@ function BtnActiveDoencas(){
 const BtnDsts = document.querySelector("#btn-DSTs")
 const TextDsts = document.querySelector("#text-DSts")
 const AreaTextDepre = document.querySelector("#area-text-depresao")
+const AreaTextDsts = document.querySelector("#area-text-dsts")
 
 
 
 BtnDsts.addEventListener('click', () => {
-    AreaTextDepre.classList.toggle('animar');
+    AreaTextDsts.classList.toggle('animar');
   })
 
 
