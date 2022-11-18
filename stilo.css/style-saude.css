@@ -32,6 +32,8 @@
 }
 
 .area-botoes{
+ 
+    
     padding: 25px;
     margin: 50px;
     margin-top: 280px;
@@ -54,6 +56,11 @@
     font-weight: bold;
 }
 
+.area-botoes{
+       position: fixed;
+        width: 100px;
+}
+
 .area-botoes a{
     text-decoration: none;
     color: black;
@@ -63,49 +70,39 @@
 
 #area-text-saude{
     margin-top: 250px;
-    margin-right: 200px;
+    margin-left: 300px;
+    width: 1500px;
+}
+
+
+#tituloDepressão{
+    font-size: 25px;
+}
+
+#area-text-depresao{
+ width: auto;
+ margin-bottom: 20px;
+
+}
+
+
+
+#tituloDsts{
+    font-size: 25px;
+}
+
+#text-DSts{
+    align-items: center;
+
 }
 
 #area-text-dsts{
     margin-bottom: 20px;
 }
 
-#area-text-depresao{
- width: auto;
 
-}
-
-
-
-.tituloDsts{
+#tituloDoencas{
     font-size: 25px;
-}
-
-#text-DSts{
-    align-items: center;
-    font-size: 25px;
-    transform: translateY(50);
-}
-
-
-
-#area-text-dsts.animar{
 
 }
 
-#area-text-depresao.animar{
-  background-color: blue;
-  animation-name: slide;
-  animation-duration: .3s;
-
-}
-
-@keyframes slide {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translateY(-50);
-    }
-}
