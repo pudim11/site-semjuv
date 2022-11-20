@@ -1,17 +1,26 @@
-/* area  de noticia*/
-const BtnTestoNoticia = document.getElementById("tbn-texto-noticia");
-const TextList = document.getElementById("texto-noticia");
-const UltimasNoticias = document.getElementById("ultimas-noticias");
+let slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-UltimasNoticias.addEventListener("Submit", (e) => {
-     
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  e.preventDefault();
-  console.log("enviou");
-//  const TextListValue = TextList.value;
- // if(TextListValue){
-  //  console.log(TextListValue)
-  //}
-
-});
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
