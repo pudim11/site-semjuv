@@ -50,6 +50,8 @@ $total=mysqli_num_rows($query);
  
     <div class="eventos-destaques">
 
+    <a class="destaque-titulo">Destaques</a>
+
       <div class="slideshow-container">
 
 
@@ -60,7 +62,7 @@ $total=mysqli_num_rows($query);
           <div class="text"><?php echo $fetch['caption'];?></div>
         </div>
         <?php $i++; } ?>
-
+        
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
