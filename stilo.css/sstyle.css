@@ -254,7 +254,6 @@ img {vertical-align: middle;}
 
 
 
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -331,24 +330,31 @@ img {vertical-align: middle;}
     height: 84.5px;
     width: 350px;
     border-bottom: 1px solid rgb(95, 95, 95);
+    
 
 }
 
 .data-list{
    margin: 10px;
 }
-#text-list{
+
+#content-list{
+    overflow-wrap:break-word;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.text-list{
     margin-left: 10px;
     overflow-wrap:break-word;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
-    
-}   
+}
 
 /*Se alguém souber como fazer ficar com esses pontos, mas com só na segunda linha se possivel, faz ai na moral*/
-
-.ouvidoria{
+#ouvidoria{
     background-color: green;
     width: 100%;
     height: 200px;
