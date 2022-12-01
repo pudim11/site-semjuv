@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:25px;
 }
 
 .cabecalho {
@@ -77,18 +80,21 @@
 
 #tituloDepressão{
     font-size: 25px;
+    font-weight: bolder;
 }
 
 #area-text-depresao{
- width: auto;
- margin-bottom: 20px;
-
+    width: auto;
+    margin-bottom: 20px;
+    
 }
 
 
 
 #tituloDsts{
+
     font-size: 25px;
+    font-weight: bolder;
 }
 
 #text-DSts{
@@ -103,5 +109,5 @@
 
 #tituloDoencas{
     font-size: 25px;
-
+    font-weight: bolder;
 }

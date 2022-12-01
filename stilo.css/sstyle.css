@@ -356,7 +356,8 @@ img {vertical-align: middle;}
 /*Se alguém souber como fazer ficar com esses pontos, mas com só na segunda linha se possivel, faz ai na moral*/
 #ouvidoria{
     background-color: green;
-    width: 100%;
+    
+    width: 1000px;
     height: 200px;
     margin-top: 95px;
 }   
