@@ -36,7 +36,7 @@ $total=mysqli_num_rows($query);
     <div class="area-botoes">    
         <div class="botoes">
             <a href="#" id="btn1" class="botao">Educação</a>
-            <a href="/pagsaude.html" id="btn2" class="botao">Saúde</a>
+            <a href="/pagsaude.php" id="btn2" class="botao">Saúde</a>
             <a href="#ouvidoria" id="btn3" class="botao">Ouvidoria</a>
         </div>
     </div>
@@ -127,6 +127,7 @@ $total=mysqli_num_rows($query);
 <section class="main-2">
   <div id="ouvidoria">
     <a class="ouvidoria-titulo">Ouvidoria</a>
+    <a class="ouvidoria-info">semjuventude@gamil.com</a>
     </div>
  </section>
 

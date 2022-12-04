@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<header>
+    <div class="cabecalho">
+        <a href="/index.php"><img src="/img/setavoltar.png" class="voltar" ></a>
+    <a class="btn-voltar" href="/index.php" >voltar</a>
+    <img class="cabeccalho-img" src="/img/cabecalho5.png" alt="bar">
+    </div>
+   </header>
 <body>
-     <form action="slideUpload.php" method="post" enctype="multipart/form-data">
+     <form class="form" action="slideUpload.php" method="post" enctype="multipart/form-data">
         <input type="text" name="caption" required placeholder="caption">
         <input type="text" name="title" required placeholder="titulo">
         <input type="text" name="alt" required placeholder="texto alternativo">
@@ -19,5 +26,69 @@
 
 
     </form>
+
+    <form class="form" action="TextSaudeDsts.php" method="post" enctype="">
+        <h2>Área de saúde sobre Dst's</h2>
+        <input type="text" name="tituloDsts" required placeholder="titulo Dst's">
+        <input type="text" name="textoDsts" required placeholder="texto Dst's">
+        <button type="submit" name="TextSaudeDst">Enviar</button>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:25px;
+    margin-top: 0;
+}
+
+header{
+    max-width: 1000vw;
+    width: auto;
+}
+
+.voltar{
+    float: none;
+    height: 50px;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 75px;
+}
+
+.btn-voltar{
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 120px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.btn-voltar{
+    background: none;
+    border: none;
+}
+
+.cabecalho-img {
+    height: 20px;
+    width: 100%;
+   margin-top: 0;
+}
+
+.cabecalho{
+    position: fixed; 
+    top: 0;
+    width: 1000vw;
+    background: rgb(0,183,255);
+    background: -moz-linear-gradient(0deg, rgba(0,183,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,183,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,183,255,0) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b7ff",endColorstr="#ffffff",GradientType=1);
+}
+
+.form{
+    margin-top: 150px;
+}
+</style>
 </body>
 </html>
