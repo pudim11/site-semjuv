@@ -1,11 +1,9 @@
 <?php
 # http://localhost/pagsaude.php
-require_once("connection.php");
-$sql="SELECT * FROM tb_saudedst WHERE 1";
+include("connection.php");
+$sql="SELECT * FROM `tb_saudedst` WHERE 1";
 $query=mysqli_query($con, $sql) or die ($sql);
-
-
-
+$TextDSTS = mysqli_query($con, $sql);
 ?>
 
 <!DOCTYPE html>

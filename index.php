@@ -1,6 +1,6 @@
 <?php
 # http://localhost/site-semjuv/index.php
-require_once("connection.php");
+include("connection.php");
 $sql="SELECT * FROM slide WHERE estado=1";
 $query=mysqli_query($con, $sql) or die ($sql);
 $total=mysqli_num_rows($query);

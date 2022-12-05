@@ -7,7 +7,7 @@ if(isset($_POST['TextSaudeDst'])){
     $TituloDST=addslashes($_POST['tituloDsts']);
     $TextDSTS=addslashes($_POST['textoDsts']);
 
-    $sql="INSERT INTO tb_saudedst VALUES ('$TituloDST','$TextDSTS')";
+    $sql="INSERT INTO tb_saudedst VALUES (Null,'$TituloDST','$TextDSTS')";
     mysqli_query ($con,$sql) or die($sql);   
 
 
