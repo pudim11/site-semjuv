@@ -3,7 +3,12 @@
 include("connection.php");
 $sql="SELECT * FROM `tb_saudedst` WHERE 1";
 $query=mysqli_query($con, $sql) or die ($sql);
-$TextDSTS = mysqli_query($con, $sql);
+$rs = mysqli_query($con, $sql);
+$reg = mysqli_fetch_assoc($rs);
+$TextDSTS =mysqli_fetch_assoc($query);
+$TituloDST =mysqli_fetch_assoc($query);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -31,11 +36,13 @@ $TextDSTS = mysqli_query($con, $sql);
         <a id="btn-depressao" href="#tituloDepressão" >Depressão</a>
         <a id="doencas" href="#tituloDoencas" >Doenças</a>
     </div>
-
     
     <div id="area-text-saude">
-        <a id="tituloDsts" >Text Dsts</a>
-      <div id="area-text-dsts"  ><a> <a id="text-DSts"> <?php echo $TextDSTS; ?></a>
+        <a id="tituloDsts" > <?php 
+        echo $TituloDST['TituloDST'];
+        ?></a>
+      <div id="area-text-dsts"  ><a> <a id="text-DSts"> <?php 
+      echo $TextDSTS['TextDSTS'];  ?></a>
     </div>
 
        <a id="tituloDepressão">Text Depressão</a>

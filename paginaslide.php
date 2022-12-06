@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,11 +27,11 @@
 
     </form>
 
-    <form class="form" action="TextSaudeDsts.php" method="post" enctype="">
+    <form class="form" action="paginaslide.php" method="post" enctype="">
         <h2>Área de saúde sobre Dst's</h2>
         <input type="text" name="tituloDsts" required placeholder="titulo Dst's">
         <input type="text" name="textoDsts" required placeholder="texto Dst's">
-        <button type="submit" name="TextSaudeDst">Enviar</button>
+        <button type="submit" name="atualizarDSTS">Enviar</button>
     </form>
 <style>
 
