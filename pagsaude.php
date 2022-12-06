@@ -5,8 +5,9 @@ $sql="SELECT * FROM `tb_saudedst` WHERE 1";
 $query=mysqli_query($con, $sql) or die ($sql);
 $rs = mysqli_query($con, $sql);
 $reg = mysqli_fetch_assoc($rs);
-$TextDSTS =mysqli_fetch_assoc($query);
-$TituloDST =mysqli_fetch_assoc($query);
+$textos =mysqli_fetch_assoc($query);
+
+
 
 
 ?>
@@ -37,41 +38,19 @@ $TituloDST =mysqli_fetch_assoc($query);
         <a id="doencas" href="#tituloDoencas" >Doenças</a>
     </div>
     
-    <div id="area-text-saude">
-        <a id="tituloDsts" > <?php 
-        echo $TituloDST['TituloDST'];
-        ?></a>
-      <div id="area-text-dsts"  ><a> <a id="text-DSts"> <?php 
-      echo $TextDSTS['TextDSTS'];  ?></a>
+    <div id="area-text-saude"><a><a id="tituloDsts"> <?php echo $textos['TituloDST'];?></a>
+    <div id="area-text-dsts"><a><a id="text-DSts"> <?php echo $textos['TextDSTS'];?></a>
     </div>
 
-       <a id="tituloDepressão">Text Depressão</a>
+       <a id="tituloDepressão"><?php echo $textos['TituloDepre'];?></a>
     <div id="area-text-depresao">  
     
-        <a id="text-depressao">Lorem ipsum dolor sit amet, consasassdadsasdectetur adipiscing elit. Nulla commodo nulla et consequat posuere. Etiam non nulla ut quam efficitur bibendum. Fusce consequat vestibulum metus, ut fringilla ex gravida sit amet. Sed tempor cursus lacus non dictum. Morbi massa ex, convallis vel tristique vitae, vehicula sed libero. Phasellus sodales elementum ultricies. Fusce sed felis vel est hendrerit lacinia a id justo. Curabitur vitae risus commodo, facilisis eros quis, varius elit. Ut et purus facilisis, posuere purus ornare, dictum tortor. Curabitur commodo mauris sit amet felis imperdiet dapibus. Donec sodales magna in dui tristique, id volutpat magna aliquam. Nam euismod vel turpis quis pharetra. Mauris malesuada luctus velit, id viverra nibh varius sed. Morbi tincidunt sapien et nibh elementum, et lobortis orci scelerisque.
-
-        Suspendisse ut nisi erat. Vestibulum quis fermentum dui. Ut id lorem dictum, sodales augue in, faucibus dui. Suspendisse et nisl euismod, consequat risus a, porta risus. Integer tortor quam, facilisis vitae tincidunt ac, porttitor sed augue. Mauris consequat, arcu at aliquet pulvinar, mauris eros ullamcorper ex, eget ullamcorper nulla nisi vel nibh. Duis sit amet ornare dolor, quis accumsan eros. Donec facilisis leo nibh, et porttitor nunc sodales quis.
-        
-        Suspendisse quis libero quis massa euismod semper ut sit amet tellus. Quisque gravida commodo porta. Curabitur posuere diam ac lacus porttitor eleifend. Aliquam a consectetur leo, in molestie ante. Curabitur ac mattis sem. Aliquam suscipit mattis ex, a pharetra dolor. Cras lectus sapien, eleifend at ultrices non, placerat a odio. Nam in leo congue, sagittis turpis ac, vulputate tortor. Pellentesque et velit suscipit, faucibus neque in, scelerisque nisl. Suspendisse potenti. Quisque lacinia fringilla orci sit amet convallis. Nulla vitae eros ut leo ultricies laoreet. Vivamus tempus interdum faucibus. Sed vestibulum ultrices erat, at fermentum sapien mattis non. Etiam eu erat ex.
-        
-        Suspendisse cursus mauris sit amet faucibus tempus. Curabitur dignissim a ex feugiat lacinia. Morbi tristique mi at lobortis lobortis. Suspendisse sodales libero sed quam ultrices, vitae mollis risus congue. Cras interdum porta pellentesque. Sed tempor vitae ligula ut ornare. Phasellus maximus odio ut tellus convallis imperdiet. Ut ultrices leo nec elementum hendrerit. Nulla gravida dolor dui, a mattis sapien suscipit scelerisque. Aliquam gravida enim nisl. Sed molestie aliquam lacus varius tristique. Ut et lacus faucibus, eleifend urna vel, facilisis leo. Nunc dapibus est nec placerat tempus. In ac pharetra ligula.
-        
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam volutpat enim augue, vitae sollicitudin dolor aliquet eget. Etiam pulvinar metus libero, ut rutrum nulla tempor non. Aenean cursus eu odio sit amet commodo. Sed scelerisque ex lectus, vitae volutpat magna fringilla non. Nulla justo lacus, varius id bibendum vel, varius ut nunc. Pellentesque ullamcorper, tortor sit amet porttitor iaculis, sapien ex sodales dolor, at porttitor sem libero in nulla. Nulla tristique nec nibh quis cursus. Aliquam bibendum libero lorem, et egestas ligula suscipit et. Aenean blandit massa a commodo rutrum. Nullam vitae magna mattis, pretium lacus eget, rutrum erat. Donec varius enim ac erat suscipit, quis luctus dolor consequat. Nullam sollicitudin nulla mauris, id ullamcorper erat semper sed. Maecenas at gravida lacus. Nulla sit amet sagittis lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.lore depreaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadolor sit, amet consectetur adipisicing elit. Atque, obcaecati maxime molestias recusandae beatae magnam
-             commodi odio illo, architecto earum necessitatibus fugiat numquam porro assumenda voluptate saepe, voluptatum excepturi ducimus.
+        <a id="text-depressao"><?php echo $textos['TextDepre'];?>
         </a>
     </div>
-        <a id="tituloDoencas">Text doencas</a>
+        <a id="tituloDoencas"><?php echo $textos['TituloDoenca'];?></a>
     <div id="area-text-doecas"> 
-        <a id="text-doencas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim magna, venenatis nec efficitur vulputate, pulvinar quis purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vitae efficitur eros, in mattis felis. Curabitur ex leo, placerat at suscipit in, tincidunt in dolor. Nunc hendrerit consectetur dolor, et suscipit massa. Aenean in risus vitae neque malesuada convallis. Fusce id lacus ac nulla lobortis ultricies. Duis finibus, quam quis placerat rhoncus, diam nisi lacinia sem, sed rutrum risus justo sit amet nunc.
-
-        Donec est eros, maximus scelerisque pulvinar euismod, volutpat vitae nisi. Nam justo leo, placerat at vulputate id, accumsan vitae erat. Pellentesque at gravida nunc, eu cursus ex. Suspendisse id lorem porta tellus pretium tristique. Aliquam ultricies bibendum eros. Proin sit amet tempor leo. Suspendisse sit amet maximus dolor, eu fringilla enim. Donec accumsan feugiat porta. Pellentesque mattis tellus vulputate, consequat risus in, ullamcorper ex. Fusce odio quam, efficitur sed ornare sed, efficitur non tortor. Nullam fringilla mi at est tempus egestas. Integer nec risus dui. Donec vel luctus orci, vitae sodales arcu. Vivamus euismod dui sollicitudin, efficitur mauris at, consequat nibh. Suspendisse eu posuere risus.
-        
-        Quisque blandit vulputate dapibus. Donec arcu arcu, posuere vitae iaculis id, sodales ut est. Curabitur augue lorem, sagittis eu vulputate nec, rhoncus a magna. Sed rhoncus vehicula ante eu egestas. Vivamus tincidunt, diam sit amet tincidunt fringilla, mauris ipsum lobortis lacus, sed lacinia justo leo vel enim. Phasellus et risus leo. Nam neque nunc, ultrices at turpis at, faucibus semper nibh. Integer luctus ac nunc nec accumsan. Aliquam ut facilisis felis, et facilisis nunc. Aliquam condimentum tempor ornare. Nunc fringilla quam massa, non dictum nulla suscipit eget. Sed in hendrerit tortor. Praesent eget ultrices tortor. Nulla facilisi. Suspendisse iaculis neque ut nunc tincidunt bibendum. In eleifend et erat et venenatis.
-        
-        Ut dolor turpis, fermentum id placerat nec, ultrices sit amet ipsum. Nulla fringilla quis est eu placerat. Sed vel venenatis turpis, placerat maximus velit. Nullam vitae ipsum ut sem euismod elementum eu ornare purus. Duis sed nisi enim. Duis id eros arcu. Proin sollicitudin vitae nibh non eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas feugiat odio in dapibus pretium.
-        
-        Donec ultricies felis sed purus fermentum aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut hendrerit convallis velit quis tempus. Etiam euismod lobortis urna, sed cursus ex volutpat sit amet. Duis in sem ullamcorper, commodo turpis ut, gravida tortor. Proin luctus arcu ac tristique pellentesque. Donec vel mollis lorem. Aenean at velit faucibus, fermentum erat ut, tristique velit. Sed a dolor a urna bibendum sodales sed consectetur ex. Integer tempus quis lacus nec suscipit. Integer ac nisi non augue fringilla mattis pretium quis nulla.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo blanditiis obcaecati impedit? Corrupti quas a nemo 
-            libero natus nam consequatur illo, quis autem repudiandae, reiciendis praesentium, aut error suscipit!
+        <a id="text-doencas"><?php echo $textos['TextDoenca'];?>
 
         </a>
     </div>

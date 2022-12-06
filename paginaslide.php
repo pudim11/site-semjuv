@@ -27,12 +27,18 @@
 
     </form>
 
-    <form class="form" action="paginaslide.php" method="post" enctype="">
-        <h2>Área de saúde sobre Dst's</h2>
+    <form class="form" action="atualizarDstS.php" method="post" enctype="">
+        <h2>Área de saúde </h2>
         <input type="text" name="tituloDsts" required placeholder="titulo Dst's">
-        <input type="text" name="textoDsts" required placeholder="texto Dst's">
+        <input type="text" name="textoDsts" required placeholder="texto Dst's">   
+        <input type="text" name="TituloDepre" required placeholder="titulo depressão">
+        <input type="text" name="textDepre" required placeholder="texto depressão">
+        <input type="text" name="tituloDoenca" required placeholder="titulo doença">
+        <input type="text" name="textDoenca" required placeholder="texto doença">
         <button type="submit" name="atualizarDSTS">Enviar</button>
     </form>
+
+s
 <style>
 
 *{
