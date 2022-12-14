@@ -20,7 +20,7 @@ $total=mysqli_num_rows($query);
     <header >
         <div id="cabecalho">
            <div class="cabecalho-logo">
-            <a href="/paginaslide.php">adm</a>
+
             <img class="logo" src="/img/Semjuv_png_bitch1.png" alt="logo">
        </div>
        <div class="sheach-bar">
@@ -130,7 +130,8 @@ $total=mysqli_num_rows($query);
     <a class="ouvidoria-info">semjuventude@gamil.com</a>
     </div>
  </section>
-
-
+<div class="admlink">
+ <a href="loginADM.html">adm</a>
+        </div>
 </body>
 </html>

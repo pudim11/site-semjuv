@@ -53,6 +53,7 @@ $textos =mysqli_fetch_assoc($query);
         <a id="text-doencas"><?php echo $textos['TextDoenca'];?>
 
         </a>
+        
     </div>
     </div>
 </section>

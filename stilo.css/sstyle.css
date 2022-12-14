@@ -381,3 +381,8 @@ img {vertical-align: middle;}
     font-size: 20px;
     
 }
+.admlink{
+    display: flex;
+    text-align: center;
+    width: 20px;
+}
