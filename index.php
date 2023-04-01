@@ -13,30 +13,30 @@ $total=mysqli_num_rows($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/stilo.css/sstyle.css">
-    <script src="/script/script.js" defer></script>
+    <link rel="stylesheet" href="./stilo.css/sstyle.css">
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <header >
         <div id="cabecalho">
            <div class="cabecalho-logo">
 
-            <img class="logo" src="/img/Semjuv_png_bitch1.png" alt="logo">
+            <img class="logo" src="./img/Semjuv_png_bitch1.png" alt="logo">
        </div>
        <div class="sheach-bar">
             <input type="search" placeholder="O que você está procurando?" name="search" id="search-txt">
             <a>
-            <img src="/img/lupa.svg" alt=" width="" width="25px"height="25px" class="lupa-branca">
+            <img src="./img/lupa.svg" alt=" width=" width="25px"height="25px" class="lupa-branca">
             </a>
         </div>
         </div>
-        <img  id="cabecalho-bar" src="/img/bar.jpeg" alt="">
+        <img  id="cabecalho-bar" src="./img/bar.jpeg" alt="">
 </header>
 <section class="main">
     <div class="area-botoes">    
         <div class="botoes">
             <a href="#" id="btn1" class="botao">Educação</a>
-            <a href="/pagsaude.php" id="btn2" class="botao">Saúde</a>
+            <a href="./pagsaude.php" id="btn2" class="botao">Saúde</a>
             <a href="#ouvidoria" id="btn3" class="botao">Ouvidoria</a>
         </div>
     </div>
@@ -64,8 +64,8 @@ $total=mysqli_num_rows($query);
         <?php $i++; } ?>
         
         
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
         
         </div>
         <br>

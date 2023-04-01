@@ -18,17 +18,17 @@ $textos =mysqli_fetch_assoc($query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/script/scriptSAUDE.js"  defer></script>
-    <link rel="stylesheet" href="/stilo.css/style-saude.css">
+    <script src="./script/scriptSAUDE.js"  defer></script>
+    <link rel="stylesheet" href="./stilo.css/style-saude.css">
     <title>Saúde SEMJUV</title>
 
 </head>
 <body>
    <header>
     <div class="cabecalho">
-        <a href="/index.php"><img src="/img/setavoltar.png" class="voltar" ></a>
-    <a class="btn-voltar" href="/index.php" >voltar</a>
-    <img class="cabeccalho-img" src="/img/cabecalho5.png" alt="bar">
+        <a href="/index.php"><img src="./img/setavoltar.png" class="voltar" ></a>
+    <a class="btn-voltar" href="./index.php" >voltar</a>
+    <img class="cabeccalho-img" src="./img/cabecalho5.png" alt="bar">
     </div>
    </header>
 <section class="main">
